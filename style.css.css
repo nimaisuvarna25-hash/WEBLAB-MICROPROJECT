@@ -1,0 +1,85 @@
+
+body {
+    --primary-purple: #B19CD9; 
+    --secondary-pink: #F3C4E3; 
+    --accent-dark: #6C5B7B; 
+    --background-light: #FAF9FB;
+    --text-color: #333;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-light);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+header {
+    background-color: var(--primary-purple);
+    color: white;
+    padding: 1em 0;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 0.8em 1.5em;
+    display: block;
+    transition: background-color 0.3s;
+    font-weight: bold;
+}
+nav ul li a:hover {
+    background-color: var(--secondary-pink);
+    color: var(--accent-dark);
+}
+
+.container {
+    width: 80%;
+    margin: 2em auto;
+    padding: 2em;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+     
+}
+
+h1, h2, h3 {
+    color: var(--accent-dark);
+}
+
+.highlight-box {
+    background-color: var(--secondary-pink);
+    padding: 15px;
+    border-left: 5px solid var(--primary-purple);
+    margin-top: 1em;
+    border-radius: 4px;
+}
+
+#notify-button {
+    background-color: #FF69B4; 
+    color: white;
+    border: none;
+    padding: 20px 40px;
+    font-size: 1.5em;
+    cursor: pointer;
+    border-radius: 50px;
+    box-shadow: 0 5px 15px rgba(255, 105, 180, 0.4);
+    transition: background-color 0.3s, transform 0.1s;
+    display: block;
+    margin: 30px auto;
+}
+
+#notify-button:active {
+    transform: translateY(2px);
+}
