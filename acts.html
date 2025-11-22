@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Legal Acts for Women</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1> Legal Acts  </h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+  <li><a href="SDG 5.html">SDG 5</a></li> 
+                <li><a href="acts.html">Legal Acts</a></li>
+                <li><a href="self-defense.html">Self-Defense</a></li>
+                <li><a href="statistics.html">Statistics</a></li>
+                <li><a href="notify.html">Emergency Notify</a></li>
+                <li><a href="contacts.html">Emergency Contacts</a></li>
+            </ul>
+        </nav>
+    </header>
+ <div class="container">
+        <div style="margin-bottom: 20px;">
+            <input type="text" id="searchInput" onkeyup="searchPage()" placeholder="Search for acts or keywords..." style="width: 100%; padding: 10px; box-sizing: border-box; border: 1px solid #ccc; border-radius: 4px;">
+        </div>
+
+
+    <div class="container">
+        <h2>Important Legislation</h2>
+
+        <h3>The Sexual Harassment of Women at Workplace (Prevention, Prohibition and Redressal) Act, 2013</h3>
+        <p>
+            This Act protects women from sexual harassment at their place of work and provides for a mechanism for redressal of complaints. It mandates the formation of Internal Complaints Committees (ICC) in organizations with 10 or more employees.
+        </p>
+
+        <h3>The Dowry Prohibition Act, 1961</h3>
+        <p>
+            This law prohibits the practice of giving or taking dowry. Both giving and taking dowry are punishable offenses, ensuring women are not subjected to domestic violence or harassment related to dowry demands.
+        </p>
+
+        <h3>The Protection of Women from Domestic Violence Act, 2005 (PWDVA)</h3>
+        <p>
+            This comprehensive law provides protection to women from all forms of domestic abuse, including physical, sexual, verbal, emotional, and economic abuse. It offers various relief measures like protection orders and residence orders.
+        </p>
+       
+        <h3>Right to Free Legal Aid</h3>
+
+ <p>
+ Every woman, irrespective of income or status, has the right to free
+ legal aid through the Legal Services Authorities Act, 1987. Legal aid is
+ available through the National Legal Services Authority (NALSA) and
+ various State Legal Services Authorities.
+</p>
+
+<h3>
+ Right Against Workplace Harassment (Sexual Harassment of Women at
+ Workplace Act, 2013)
+ </h3>
+ <p>
+ This act makes it mandatory for all workplaces with more than 10
+ employees to form an Internal Complaints Committee (ICC) to address
+ grievances related to sexual harassment. It defines what constitutes
+ sexual harassment and lays out the procedure for complaints.
+ </p>
+
+ <h3>
+ Right to Maternity Leave (Maternity Benefit Act, 1961)</h3>
+ <p>
+ This law ensures that women are entitled to 26 weeks of paid maternity
+leave for the first two children and 12 weeks for subsequent children.
+It also provides leave for adoption and surrogacy cases under certain
+conditions.
+</p>
+
+ <h3>
+ Right Against Dowry (Dowry Prohibition Act, 1961)</h3>
+ <p>
+ Demanding dowry, giving or taking it is a punishable offense. The law
+ aims to eradicate the social evil of dowry and provides strict
+ penalties, including imprisonment.
+</p>
+
+<h3>
+ Right to Abortion (Medical Termination of Pregnancy Act, 1971 -
+Amended 2021)
+ </h3>
+
+ <p>
+Women have the legal right to seek an abortion up to 24 weeks in certain
+ cases, with consent and under medical supervision. This law ensures
+ reproductive rights and privacy.
+</p>
+
+ <h3>
+ Right to Register an FIR (Criminal Procedure Code, Section 154)
+ </h3>
+<p>
+Every woman has the right to lodge an FIR at any police station, even in
+the absence of jurisdiction. Moreover, a woman officer must be present
+ to record statements in cases involving sexual offenses.
+ </p>
+
+<h3>13. Right to Privacy During Medical Examination</h3>
+<p>
+ Under the Code of Criminal Procedure (CrPC), a woman can only be
+ medically examined by or under the supervision of a female medical
+ practitioner. This ensures dignity and privacy.
+</p>
+        </div>
+</div>
+
+    <script>
+        function searchPage() {
+            let input = document.getElementById('searchInput');
+            let filter = input.value.toUpperCase();
+            let container = document.getElementById('contentToSearch');
+            // Select all H3 and P elements within the content area
+            let elements = container.querySelectorAll('h3, p');
+
+            elements.forEach(function(element) {
+                let textValue = element.textContent || element.innerText;
+                // Check if the element's text contains the search filter
+                if (textValue.toUpperCase().indexOf(filter) > -1) {
+                    element.style.display = ""; // Show the element
+                } else {
+                    element.style.display = "none"; // Hide the element
+                }
+            });
+        }
+    </script>
+   
+
+</body>
+</html>

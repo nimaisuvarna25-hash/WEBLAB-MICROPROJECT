@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emergency Notify</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1> Emergency Notify System </h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="SDG 5.html">SDG 5</a></li> 
+                <li><a href="acts.html">Legal Acts</a></li>
+                <li><a href="self-defense.html">Self-Defense</a></li>
+                <li><a href="statistics.html">Statistics</a></li>
+                <li><a href="notify.html">Emergency Notify</a></li>
+                <li><a href="contacts.html">Emergency Contacts</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container" style="text-align: center;">
+        <h2>Tap the button if you are in immediate danger.</h2>
+        <p>
+            <b>IMPORTANT:</b> This is a simulated system. In a real-world application, this would send an SMS or API request to the police with your exact location.
+        </p>
+    <label for="userName">Enter your name <span style="color:red">*</span></label>
+    <input type="text" id="userName" required placeholder="Your name" />
+
+    <br><br>
+
+    <label for="locationSelect">Allow Permission to Access Location</label>
+    <select id="locationSelect">
+    <option value="">-- Select an option --</option>
+    <option value="allow">Allow</option>
+    <option value="deny">Deny</option>
+   </select>
+
+<br><br>
+
+        <button id="notify-button">
+            SEND HELP ALERT
+        </button>
+
+        <p id="status-message" style="margin-top: 20px; font-weight: bold; color: var(--accent-dark);">
+            Click the button above to alert authorities.
+        </p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
